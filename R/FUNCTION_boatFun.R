@@ -27,7 +27,7 @@ boatFun <- function(orgLs, yrMon,
                      # Select gear type
                      if(!is.null(type))
                      {
-                       orgTbl <- orgTbl[orgTbl$geartype == type, ]
+                       orgTbl <- orgTbl[orgTbl$geartype %in% type, ]
 
                        geartype <- type
                      } else {
